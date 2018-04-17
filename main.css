@@ -1,0 +1,382 @@
+html,
+body {
+    background-image: url(assets/snowflake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+    color: #0000ff;
+    -webkit-transition: all .2s;
+    -mox-transition: all .2s;
+    transition: all .2s;
+}
+
+a:hover,
+a:focus {
+    color: #f05f40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Kaushan Script', 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.light {
+    background-color: white
+}
+
+.text-faded {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-faded-blue {
+    color: rgba(0, 0, 255, 0.7);
+}
+
+.section-heading {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+
+.section-heading-blue {
+    margin-top: 0;
+    color: #0000ff;
+    text-align: center;
+}
+
+.section-headingDark {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}
+
+.grid-container {
+    display: subgrid;
+    grid-template: none;
+    grid-gap: 10px;
+    /*    grid-auto-rows: minmax(0px, auto);*/
+    padding: 20px;
+    /*    margin-top: 5em;*/
+    margin: 5em 10em 0em 3em;
+    background-color: rgba(255, 255, 255, 0.85)
+}
+
+.grid-item {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.75);
+}
+
+iframe {
+    text-align: center;
+}
+
+.img-border {
+    border: 4px solid #0000ff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*    ###################### Nav Bar ##################*/
+
+.navbar {}
+
+/*    ###################### Side Bar ##################*/
+
+.sidenav {
+    height: auto;
+    /* Full-height: remove this if you want "auto" height */
+    width: 75px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #ff661a;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5em;
+    margin-right: 7px;
+    border: 4px solid #000fff;
+    border-radius: 7px;
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px
+    }
+}
+
+
+/*######## Font Awesome ######## */
+
+.fa-facebook-square {
+    color: #3B5998;
+}
+
+.fa-at {
+    color: #d34836;
+}
+
+.fa-phone-square {
+    color: #00cc00;
+}
+
+.fa-home {
+    color: #ff8000;
+}
+
+
+/*######## 3d Font Animation ########*/
+
+.icon-block .fa-3dicon {
+    /*transform-style*/
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /*perspective*/
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    /*Webkit*/
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    /*mozilla*/
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: both;
+    /*Opera*/
+    -o-animation-name: rotate;
+    -o-animation-duration: 3s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -o-animation-fill-mode: both;
+    /*IE 10*/
+    -ms-animation-name: rotate;
+    -ms-animation-duration: 3s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-fill-mode: both;
+
+    /*Default*/
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: auto;
+    text-align: center;
+}
+
+
+@-webkit-keyframes rotate {
+    0% {
+        text-shadow: 1px 1px 1px #CCC;
+        -webkit-transform: rotateY(0deg);
+    }
+
+    25% {
+        text-shadow: 1px 1px 1px #CCC, -2px 1px 1px #CCC, -3px 1px 1px #CCC, -4px 1px 1px #CCC, -4px 1px 1px #CCC,
+        -5px 1px 1px #CCC, -6px 1px 1px #CCC, -7px 1px 1px #CCC, -8px 1px 1px #CCC, -9px 1px 1px #CCC, -10px 1px 1px #CCC,
+        -11px 1px 1px #CCC, -12px 1px 1px #CCC, -13px 1px 1px #CCC, -14px 1px 1px #CCC, -15px 1px 1px #CCC, -16px 1px 1px #CCC,
+        -17px 1px 1px #CCC, -18px 1px 1px #CCC, -19px 1px 1px #CCC, -20px 1px 1px #CCC;
+        -webkit-transform: rotateY(40deg);
+    }
+    50% {
+        text-shadow: 0px 0px 0px #CCC;
+        -webkit-transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 1px 1px 1px #CCC, 2px 1px 1px #CCC, 3px 1px 1px #CCC, 4px 1px 1px #CCC, 4px 1px 1px #CCC,
+        5px 1px 1px #CCC, 6px 1px 1px #CCC, 7px 1px 1px #CCC, 8px 1px 1px #CCC, 9px 1px 1px #CCC, 10px 1px 1px #CCC,
+        11px 1px 1px #CCC, 12px 1px 1px #CCC, 13px 1px 1px #CCC, 14px 1px 1px #CCC, 15px 1px 1px #CCC, 16px 1px 1px #CCC,
+        17px 1px 1px #CCC, 18px 1px 1px #CCC, 19px 1px 1px #CCC, 20px 1px 1px #CCC;
+        -webkit-transform: rotateY(-40deg);
+    }
+    100% {
+        text-shadow: 1px 1px 1px #CCC;
+        -webkit-transform: rotateY(0deg);
+    }
+}
+
+
+@-moz-keyframes rotate {
+    0% {
+        text-shadow: 1px 1px 1px #CCC;
+        -moz-transform: rotateY(0deg);
+    }
+
+    25% {
+        text-shadow: 1px 1px 1px #CCC, -2px 1px 1px #CCC, -3px 1px 1px #CCC, -4px 1px 1px #CCC, -4px 1px 1px #CCC,
+        -5px 1px 1px #CCC, -6px 1px 1px #CCC, -7px 1px 1px #CCC, -8px 1px 1px #CCC, -9px 1px 1px #CCC, -10px 1px 1px #CCC,
+        -11px 1px 1px #CCC, -12px 1px 1px #CCC, -13px 1px 1px #CCC, -14px 1px 1px #CCC, -15px 1px 1px #CCC, -16px 1px 1px #CCC,
+        -17px 1px 1px #CCC, -18px 1px 1px #CCC, -19px 1px 1px #CCC, -20px 1px 1px #CCC;
+        -moz-transform: rotateY(40deg);
+    }
+    50% {
+        text-shadow: 0px 0px 0px #CCC;
+        -moz-transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 1px 1px 1px #CCC, 2px 1px 1px #CCC, 3px 1px 1px #CCC, 4px 1px 1px #CCC, 4px 1px 1px #CCC,
+        5px 1px 1px #CCC, 6px 1px 1px #CCC, 7px 1px 1px #CCC, 8px 1px 1px #CCC, 9px 1px 1px #CCC, 10px 1px 1px #CCC,
+        11px 1px 1px #CCC, 12px 1px 1px #CCC, 13px 1px 1px #CCC, 14px 1px 1px #CCC, 15px 1px 1px #CCC, 16px 1px 1px #CCC,
+        17px 1px 1px #CCC, 18px 1px 1px #CCC, 19px 1px 1px #CCC, 20px 1px 1px #CCC;
+        -moz-transform: rotateY(-40deg);
+    }
+    100% {
+        text-shadow: 1px 1px 1px #CCC;
+        -moz-transform: rotateY(0deg);
+    }
+}
+
+
+
+@-o-keyframes rotate {
+    0% {
+        text-shadow: 1px 1px 1px #CCC;
+        -o-transform: rotateY(0deg);
+    }
+
+    25% {
+        text-shadow: 1px 1px 1px #CCC, -2px 1px 1px #CCC, -3px 1px 1px #CCC, -4px 1px 1px #CCC, -4px 1px 1px #CCC,
+        -5px 1px 1px #CCC, -6px 1px 1px #CCC, -7px 1px 1px #CCC, -8px 1px 1px #CCC, -9px 1px 1px #CCC, -10px 1px 1px #CCC,
+        -11px 1px 1px #CCC, -12px 1px 1px #CCC, -13px 1px 1px #CCC, -14px 1px 1px #CCC, -15px 1px 1px #CCC, -16px 1px 1px #CCC,
+        -17px 1px 1px #CCC, -18px 1px 1px #CCC, -19px 1px 1px #CCC, -20px 1px 1px #CCC;
+        -o-transform: rotateY(40deg);
+    }
+    50% {
+        text-shadow: 0px 0px 0px #CCC;
+        -o-transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 1px 1px 1px #CCC, 2px 1px 1px #CCC, 3px 1px 1px #CCC, 4px 1px 1px #CCC, 4px 1px 1px #CCC,
+        5px 1px 1px #CCC, 6px 1px 1px #CCC, 7px 1px 1px #CCC, 8px 1px 1px #CCC, 9px 1px 1px #CCC, 10px 1px 1px #CCC,
+        11px 1px 1px #CCC, 12px 1px 1px #CCC, 13px 1px 1px #CCC, 14px 1px 1px #CCC, 15px 1px 1px #CCC, 16px 1px 1px #CCC,
+        17px 1px 1px #CCC, 18px 1px 1px #CCC, 19px 1px 1px #CCC, 20px 1px 1px #CCC;
+        -o-transform: rotateY(-40deg);
+    }
+    100% {
+        text-shadow: 1px 1px 1px #CCC;
+        -o-transform: rotateY(0deg);
+    }
+}
+
+
+
+
+
+@keyframes rotate {
+    0% {
+        text-shadow: 1px 1px 1px #CCC;
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        text-shadow: 1px 1px 1px #CCC, -2px 1px 1px #CCC, -3px 1px 1px #CCC, -4px 1px 1px #CCC, -4px 1px 1px #CCC,
+        -5px 1px 1px #CCC, -6px 1px 1px #CCC, -7px 1px 1px #CCC, -8px 1px 1px #CCC, -9px 1px 1px #CCC, -10px 1px 1px #CCC,
+        -11px 1px 1px #CCC, -12px 1px 1px #CCC, -13px 1px 1px #CCC, -14px 1px 1px #CCC, -15px 1px 1px #CCC, -16px 1px 1px #CCC,
+        -17px 1px 1px #CCC, -18px 1px 1px #CCC, -19px 1px 1px #CCC, -20px 1px 1px #CCC;
+        transform: rotateY(40deg);
+    }
+    50% {
+        text-shadow: 0px 0px 0px #CCC;
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 1px 1px 1px #CCC, 2px 1px 1px #CCC, 3px 1px 1px #CCC, 4px 1px 1px #CCC, 4px 1px 1px #CCC,
+        5px 1px 1px #CCC, 6px 1px 1px #CCC, 7px 1px 1px #CCC, 8px 1px 1px #CCC, 9px 1px 1px #CCC, 10px 1px 1px #CCC,
+        11px 1px 1px #CCC, 12px 1px 1px #CCC, 13px 1px 1px #CCC, 14px 1px 1px #CCC, 15px 1px 1px #CCC, 16px 1px 1px #CCC,
+        17px 1px 1px #CCC, 18px 1px 1px #CCC, 19px 1px 1px #CCC, 20px 1px 1px #CCC;
+        transform: rotateY(-40deg);
+    }
+    100% {
+        text-shadow: 1px 1px 1px #CCC;
+        transform: rotateY(0deg);
+    }
+}
